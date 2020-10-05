@@ -1,0 +1,14 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '12.0'
+use_frameworks!
+inhibit_all_warnings!
+
+def pod_dtb_ios_sdk_test
+ pod 'AmazonPublisherServicesSDK', '3.3.2'
+ pod 'AmazonPublisherServicesAdMobAdapter'
+end
+
+target 'DTB' do
+  pod_dtb_ios_sdk_test 
+end
